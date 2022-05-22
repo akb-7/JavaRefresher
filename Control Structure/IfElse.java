@@ -6,8 +6,6 @@ class IfElse {
         if(n>5) {
             System.out.println("The entered number is greater than 5");
         }
-        else {
-            System.out.println("The entered number is lesser than or equal to 5");
-        }
+        else System.out.println("The entered number is lesser than or equal to 5");
     }
 }
