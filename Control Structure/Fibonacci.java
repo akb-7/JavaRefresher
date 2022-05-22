@@ -7,16 +7,14 @@ public class Fibonacci {
         Scanner sc= new Scanner(System.in);
         int n = sc.nextInt();
         int first = 1,second = 1;
-        if(n==1){
-            System.out.print(first+"\t");
-        }
-        else if(n==2) {
-            System.out.print(second+"\t");
-        }
-        else {
-            System.out.print(first+"\t");
-            System.out.print(second+"\t");
-            for(int i=3;i<=n;i++) {
+        for(int i=1;i<=n;i++) {
+            if(i==1){
+                System.out.print(first+"\t");
+            }
+            else if(i==2) {
+                System.out.print(second+"\t");
+            }
+            else {
                 int third = first+second;
                 System.out.print(third+"\t");
                 first = second;
